@@ -70,3 +70,11 @@ user = {
 }
 
 print(user)
+
+# NoneType
+# There is currently no value.
+
+result = None
+
+print(result)
+print(type(result))
