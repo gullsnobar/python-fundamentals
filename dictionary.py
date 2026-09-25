@@ -100,3 +100,20 @@ person = {
 }
 del person["age"]
 print(person)
+
+# remove everything clear()
+
+person = {
+    "name" : "Ali"
+    "age" : 23
+}
+person.clear()
+
+print(person)
+
+person = {
+    "name": "Ali",
+    "age": 23,
+    "city": "Lahore"
+}
+print(person.keys())
