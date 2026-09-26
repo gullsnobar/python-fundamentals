@@ -82,3 +82,29 @@ def get_user():
 
 user = get_user()  
 print(user["name"])  
+
+
+# Lambda Functions
+# You do not need to make every function a lambda
+
+# A normal function
+
+def square(number):
+    return number * number
+
+# A lambda function
+
+square = lambda number: number * number
+print(square(5))
+
+# The most practical place you'll see lambda is with things like sorting.
+
+users = [
+    {"name": "Gull", "age": 2},
+    {"name": "Ali", "age": 24},
+    {"name": "Kamran", "age": 27}
+]
+
+users.sort(key=lambda user: user["age"])
+
+print(users)
